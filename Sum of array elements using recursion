@@ -1,0 +1,12 @@
+def s(l,r,e,sum):
+    if r==e-1:
+        print(sum)
+        return
+    print(l[r])
+    sum=sum+l[r]
+    s(l,r+1,e,sum)
+l=[1,2,3,4,5]
+e=len(l)
+r=0
+sum=0
+s(l,r,e,sum)
